@@ -6,6 +6,47 @@ using System.Threading.Tasks;
 
 namespace PracticeObjectOrientedDesign
 {
+    class Circle 
+    {
+        double Radius;
+        public Circle(double radius)
+        {
+            Radius = radius;
+        }
+
+        public double CalculateArea()
+        {
+            return Math.PI * Radius * Radius;
+        }
+    }
+    class Square
+    {
+        double SideLength;
+        public Square(double sideLength)
+        {
+            SideLength = sideLength;
+        }
+
+        public double CalculateArea()
+        {
+            return SideLength * SideLength;
+        }
+    }
+    class Traiangle
+    {
+        double Bottom;
+        double Height;
+        public Traiangle(double bottom, double height)
+        {
+            Bottom = bottom;
+            Height = height;
+        }
+
+        public double CalculateArea()
+        {
+            return Bottom * Height / 2;
+        }
+    }
     class Shape
     {
         public ShapeType Type { get; set; }
